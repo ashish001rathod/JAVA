@@ -1,39 +1,36 @@
-package deloittecore;
-
-public class Customer {
-private int customerId;
-private String customerName;
-private String city;
-public int getCustomerId() {
-	return customerId;
-}
-
-public Customer() {
-	super();
-	// TODO Auto-generated constructor stub
-}
-
-public Customer(int customerId, String customerName, String city) {
-	super();
-	this.customerId = customerId;
-	this.customerName = customerName;
-	this.city = city;
-}
-
-public void setCustomerId(int customerId) {
-	this.customerId = customerId;
-}
-public String getCustomerName() {
-	return customerName;
-}
-public void setCustomerName(String customerName) {
-	this.customerName = customerName;
-}
-public String getCity() {
-	return city;
-}
-public void setCity(String city) {
-	this.city = city;
-}
+package utils;
+import java.io.Serializable;
+public class Customer implements Serializable{ //
+	private int custid;
+	private String custname;
+	private double comm;
+	public Customer() {
+		super();
+	}
+	public Customer(int custid, String custname, double comm) {
+		super();
+		this.custid = custid;
+		this.custname = custname;
+		this.comm = comm;
+	}
+	public int getCustid() {
+		return custid;
+	}
+	public void setCustid(int custid) {
+		this.custid = custid;
+	}
+	public String getCustname() {
+		return custname;
+	}
+	public void setCustname(String custname) {
+		this.custname = custname;
+	}
+	public double getComm() {
+		return comm;
+	}
+	public void setComm(double comm) {
+		this.comm = comm;
+	}
+	
 
 }
